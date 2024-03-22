@@ -39,8 +39,9 @@ var isPalindrome = function (head) {
   // Nếu prev là null thì tức là đã duyệt hết danh sách và tất cả các phần tử đều giống nhau
   return prev === null;
 };
+// time O(n) - space O(1)
 
-const list = new ListNode(1, new ListNode(2));
+const list = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(2, new ListNode(1, new ListNode(1))))));
 
 const result = isPalindrome(list);
 
